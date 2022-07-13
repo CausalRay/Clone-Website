@@ -265,10 +265,11 @@ font-size: 14px;
 
 #features {
 height:100vh;
+
 }
 
 .features_container {
-    padding: 150px 56px 0 56px;
+    padding: 150px 56px 12px 56px;
 }
 
 .features_heading {
@@ -334,11 +335,13 @@ height:100vh;
 /* SHOWCASE */
 
 #showcase {
-    height: 60vh;
+    height: 75vh;
 }
 
 .showcase_row {
     display: flex;
+    height: 450px;
+    align-items: center;
 }
 
 .showcase_description {
@@ -350,15 +353,17 @@ height:100vh;
 
 .showcase_image_wrapper {
     width: 50%;
+    height: 350px;
 }
 
 .showcase_image {
     width: 100%;
-    transform: scale(1.4);
+    border: 1px solid rgba(0, 0, 0, 0.137); ;
+    height: 100%;
 }
 
 .showcase_container {
-    padding: 56px 32px;
+    padding: 16px 32px;
 }
 
 .showcase_btn {
@@ -378,8 +383,13 @@ height:100vh;
 
 /* STEPS */ 
 
+#steps {
+    height: 80vh;
+}
+
 .steps_container {
-    margin:0 32px 32px 32px;
+    margin:0 32px;
+    padding-top: 100px;
 }
 
 .steps_row {
@@ -446,7 +456,7 @@ height:100vh;
 /* PLANS */
 
 #plans {
-    height: 100vh;
+    height: 115vh;
 }
 
 .plans_container {
@@ -617,15 +627,27 @@ background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 10
 
 /* FOOTER */
 
-.footer_container {
-    padding: 100px 0;
+footer {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
-.footer_row {}
+#footer a, 
+#footer span, 
+#footer p{
+    color: white;
+}
+
+.footer_container {
+    padding: 120px 24px 24px 24px;
+}
+
+
 
 .footer_links_wrap {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
 .footer_links {
@@ -635,9 +657,452 @@ background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 10
     align-items: center;
     justify-content: space-around;
     height: 200px;
+   
 }
+
+
 
 .footer_logo {
     height: 32px;
     width: 32px;
+}
+
+.footer_subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.footer_link {
+    position: relative;
+    cursor: no-drop;
+}
+
+
+.footer_link_effect:after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0;
+    bottom: -5px;
+    width: 0;
+    right: 0;
+    position: absolute;
+    transition: all 300ms ease;
+}
+
+.footer_link_effect:hover:after{
+    width: 100%;
+    left: 0;
+
+}
+
+.footer_info{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo {
+    border-radius: 8px;
+}
+
+.footer_logo_wrap {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.test {
+    width: 100%;
+    text-align: left;
+}
+
+.line{
+border: 1px solid rgba(199, 188, 188, 0.575);
+}
+
+.ray {
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer_icon {
+    width: 46px;
+    height: 46px;
+    border: solid;
+    color: black;
+    border-color: white;
+    cursor: no-drop;
+    border-radius: 100%;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: white;
+
+}
+
+.fa-facebook-f {
+    padding-left: 13px;
+}
+
+/* BURGER MENU */
+
+.btn_menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #38ACEC;
+    display: none;
+}
+
+.menu_icon {
+    color: black;
+    border: none;
+}
+
+.menu_backdrop {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    visibility: hidden;
+    height: 650px;
+    opacity: 0;
+}
+
+.menu--open .menu_backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.btn_menu_close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: no-drop;
+}
+
+.menu_link:active {
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    color: #38ACEC;
+}
+
+.menu_list {
+    padding: 16px 0px;
+}
+
+.sign_up {
+    padding: 16px 32px;
+    border-radius: 30px;
+    background-color:#38ACEC ;
+    color: white; 
+
+} 
+
+
+@media (max-width: 1025px) {
+    .nav_links {
+        display: none;
+    }
+
+    .btn_menu {
+        display: block;
+    }
+
+    .menu_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .template_description_container {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    .template_input {
+        margin: 0 auto;
+    }
+
+    .figure_wrapper {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .showcase_row {
+        flex-direction: column-reverse;
+    }
+
+    .template_header {
+        font-size: 40px;
+    }
+
+    .showcase_description {
+        margin-bottom: 32px;
+    }
+
+    .showcase_image_wrapper {
+        height: 85%;
+        width: 80%;
+        margin-bottom: 48px;
+    }
+
+    .showcase_description {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .showcase_container {
+        margin-top: 250px;
+    }
+
+    .showcase_para {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+   
+
+    .showcase_image {
+        height:auto;
+    }
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+
+    .service {
+        font-size: 10px;
+        margin-bottom: 32px;
+        width: 50%;
+    }
+
+    .services {
+        padding-left:0;
+    }
+    
+    .features_subtitle {
+        font-size: 32px;
+    }
+
+    .showcase_row {
+        margin-top: 100px;
+    }
+
+    .steps_row {
+        flex-direction: column;
+    }
+
+    .steps_word,
+    .steps_subtitle {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #plans {
+
+        margin-top: 350px;
+    }
+
+    .plan_package {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 32px auto;
+    }
+
+    #footer {
+        margin-top: 1000px;
+    }
+
+    #footer {
+    margin-top:1300px;
+}
+
+.footer_links {
+    width: calc(100%/3);
+  
+}
+
+.test,
+.footer_subtitle {
+    text-align: center;
+}
+
+.footer_info {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_para {
+    padding: 24px 0;
+    font-size: 12px;
+}
+
+.footer_icons{
+    transform: scale(0.8);
+}
+
+.fa-facebook-f {
+    padding-left: 9px;
+}
+
+.fa-youtube {
+    padding-left: 7px;
+}
+
+.footer_icon {
+
+    margin: 0 12px;
+}
+
+.footer_links:nth-child(4),
+.footer_links:nth-child(5) {
+    margin-top: 16px;
+}
+}
+
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+
+@media (max-width: 550px) {
+    
+
+    .template_para {
+        font-size: 14px;
+    }
+
+    .template_btn {
+        top: 70px;
+        width: 100%;
+        right: 0;
+    }
+
+    .customer_wrapper{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .features_container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+       
+    .features_subtitle {
+        text-align: center;
+    }
+ 
+    .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .service_description {
+        text-align: center;
+    }
+
+    .service_icon {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    #showcase {
+        margin-top: 1400px;
+    }
+
+    .showcase_image_wrapper {
+        width: 100%;
+    }
+
+    .showcase_para {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .showcase_btn {
+        width: 50%;
+        padding: 15px 16px;
+    }
+
+    .steps_image_wrapper {
+        width: 100%;
+    }
+
+.steps_wrapper {
+    margin-left: 0;
+    width: 100%;
+    max-width: 250px;
+
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
+.template_header {
+    font-size: 30px;
+}
+
+.steps_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps_sub_description {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 12px;
+}
+
+#plans {
+    margin-top: 600px;
+}
+    
+
+
 }
