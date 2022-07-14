@@ -141,7 +141,7 @@ align-items: center;
 /* MENU */
 
 .menu_container {
-    padding: 0 32px;
+    padding: 12px 32px 64px 32px;
 }
 
 .menu_wrapper {
@@ -263,13 +263,8 @@ font-size: 14px;
 
 /* FEATURES */ 
 
-#features {
-height:100vh;
-
-}
-
 .features_container {
-    padding: 150px 56px 12px 56px;
+    padding: 150px 56px 56px 56px;
 }
 
 .features_heading {
@@ -334,13 +329,8 @@ height:100vh;
 
 /* SHOWCASE */
 
-#showcase {
-    height: 75vh;
-}
-
 .showcase_row {
     display: flex;
-    height: 450px;
     align-items: center;
 }
 
@@ -363,7 +353,7 @@ height:100vh;
 }
 
 .showcase_container {
-    padding: 16px 32px;
+    padding: 100px 32px;
 }
 
 .showcase_btn {
@@ -383,13 +373,9 @@ height:100vh;
 
 /* STEPS */ 
 
-#steps {
-    height: 80vh;
-}
-
 .steps_container {
     margin:0 32px;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .steps_row {
@@ -455,13 +441,7 @@ height:100vh;
 
 /* PLANS */
 
-#plans {
-    height: 115vh;
-}
 
-.plans_container {
-    margin: 80px 32px 32px 32px;
-}
 
 .plans_row {
     display: flex;
@@ -625,7 +605,13 @@ background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 10
     color: white;
 }
 
+.plans_container {
+    padding: 80px 32px 150px 32px;
+}
+
 /* FOOTER */
+
+
 
 footer {
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
@@ -890,10 +876,6 @@ border: 1px solid rgba(199, 188, 188, 0.575);
         max-width: 800px;
     }
 
-    .showcase_container {
-        margin-top: 250px;
-    }
-
     .showcase_para {
         margin-top: 32px;
         margin-bottom: 32px;
@@ -926,9 +908,6 @@ border: 1px solid rgba(199, 188, 188, 0.575);
         font-size: 32px;
     }
 
-    .showcase_row {
-        margin-top: 100px;
-    }
 
     .steps_row {
         flex-direction: column;
@@ -940,24 +919,12 @@ border: 1px solid rgba(199, 188, 188, 0.575);
         margin-left: 0;
     }
 
-    #plans {
-
-        margin-top: 350px;
-    }
-
     .plan_package {
         width: 100%;
         max-width: 400px;
         margin: 0 auto 32px auto;
     }
 
-    #footer {
-        margin-top: 1000px;
-    }
-
-    #footer {
-    margin-top:1300px;
-}
 
 .footer_links {
     width: calc(100%/3);
@@ -1050,10 +1017,6 @@ border: 1px solid rgba(199, 188, 188, 0.575);
         margin-bottom: 16px;
     }
 
-    #showcase {
-        margin-top: 1400px;
-    }
-
     .showcase_image_wrapper {
         width: 100%;
     }
@@ -1099,9 +1062,6 @@ border: 1px solid rgba(199, 188, 188, 0.575);
     margin-top: 12px;
 }
 
-#plans {
-    margin-top: 600px;
-}
     
 
 
